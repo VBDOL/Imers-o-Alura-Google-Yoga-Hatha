@@ -1,0 +1,171 @@
+/* Importa as fontes Chakra Petch e Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Poppins:wght@700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-image: url('/img/backgroudyoga.png'); /* Substitua pelo caminho correto */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+/* Estiliza o título principal "Posturas Hatha Yoga" */
+.titulo-destaque {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #30475E;
+    margin-bottom: 1rem;
+    text-shadow: 
+        1px 1px 0 #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estiliza a seção da pesquisa */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Estiliza o campo de pesquisa e botão */
+section input {
+    width: 30rem;
+    border: 1px solid #30475E;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #2C3E50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza o contêiner dos cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estiliza cada card */
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Estiliza o link dentro do card */
+.card .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #30475E;
+    color: #F5F7F8;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Adiciona efeito hover ao card */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Adiciona efeito hover ao botão dentro do card */
+.card .btn:hover {
+    background-color: #2C3E50;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto e os ícones */
+    position: relative;
+    width: 100%; /* Preenche toda a largura da tela */
+    bottom: 0;
+}
+
+/* Limita a largura do conteúdo do rodapé */
+.footer-content {
+    max-width: 1200px; /* Largura máxima do conteúdo do rodapé */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza o texto dentro do rodapé */
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estiliza os ícones das redes sociais */
+.social-icons {
+    margin-top: 10px; /* Espaçamento acima dos ícones */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    display: inline-block; /* Faz com que os ícones fiquem lado a lado */
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Transição suave para hover */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.social-icons a:hover {
+    color: #ddd; /* Cor ao passar o mouse */
+}
+
+/* Garante que o rodapé fique no final da página */
+main {
+    flex: 1; /* Permite que o conteúdo principal expanda para preencher o espaço disponível */
+}
