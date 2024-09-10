@@ -44,6 +44,7 @@ section {
 /* Estiliza o campo de pesquisa e botão */
 section input {
     width: 30rem;
+    max-width: 90%; /* Ajusta para telas menores */
     border: 1px solid #30475E;
     padding: 1rem;
     border-radius: 1.5rem;
@@ -168,4 +169,34 @@ footer {
 /* Garante que o rodapé fique no final da página */
 main {
     flex: 1; /* Permite que o conteúdo principal expanda para preencher o espaço disponível */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .titulo-destaque {
+        font-size: 2rem; /* Ajusta o tamanho do título */
+    }
+
+    .card {
+        width: 45%; /* Reduz a largura dos cards para caber melhor em telas menores */
+    }
+
+    section input {
+        width: 90%; /* Ajusta o campo de pesquisa para ocupar a maior parte da tela */
+    }
+
+    .container {
+        justify-content: center; /* Centraliza os cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Cards ocupam toda a largura disponível em telas muito pequenas */
+        margin: 5px 0; /* Reduz as margens dos cards */
+    }
+
+    .titulo-destaque {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho do título */
+    }
 }
